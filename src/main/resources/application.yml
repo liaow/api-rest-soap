@@ -1,0 +1,16 @@
+server:
+  port: 9876
+logging:
+  level:
+    com.github.saharag: debug
+
+#spring:
+#  hsf:
+#    group: HSF
+#    version: 1.0.0
+#    timeout: 3000
+
+spring:
+  autoconfigure:
+    # 禁用database自动配置
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
